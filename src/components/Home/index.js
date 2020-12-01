@@ -27,6 +27,8 @@ function Home() {
       return restaurant.name.toLowerCase().includes(search.toLowerCase());
     });
 
+    console.log(restaurants)
+
   return (
     <div>
       <div>
