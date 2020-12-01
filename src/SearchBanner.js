@@ -32,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
 
 function SearchBanner(props) {
     const classes = useStyles();
-    return <Grid containe item lg={12} xs={3} sm={6}>
+    return <Grid item lg={12} xs={3} sm={6}>
 
         <Paper className={classes.paper}>
             <TextField className={classes.searchField} justify="center"
-             alignItems="center" id="outlined-search" label="Find restaurants in your area" type="search" variant="outlined" />
+             id="outlined-search" label="Find restaurants in your area" type="search" variant="outlined" />
         </Paper>
     </Grid>
 }
