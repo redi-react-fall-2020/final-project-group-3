@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import Restaurant from "../../Restaurant.js";
-import Search from "../Search";
+
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -66,13 +66,13 @@ function Home() {
       
         <div className={classes.root}>
           <Grid container spacing={3}>
-            <Search handleChange={handleChange} />
-            <SearchBanner />
-            <Grid item xl={9} xs={9} sm={9}>
+           
+            <SearchBanner handleChange={handleChange} />
+     
              
                 {
                   filterRestaurant.map((restaurant, i) => {
-                    return <Grid item lg={3} xs={3} sm={3}> 
+                    return <Grid item xl={3} lg={3} xs={3} sm={3}> 
                     <Restaurant
                       key={i}
                       picture={restaurant.photos[0].links[0]}
@@ -84,7 +84,7 @@ function Home() {
                   })
                 }
               
-            </Grid>
+          
           </Grid>
         </div>
       </Container>

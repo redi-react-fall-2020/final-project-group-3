@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import bannerPhoto from "./banner.jpg";
+import Search from "./components/Search";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,8 +36,7 @@ function SearchBanner(props) {
     return <Grid item lg={12} xs={3} sm={6}>
 
         <Paper className={classes.paper}>
-            <TextField className={classes.searchField} justify="center"
-             id="outlined-search" label="Find restaurants in your area" type="search" variant="outlined" />
+        <Search handleChange={props.handleChange} />
         </Paper>
     </Grid>
 }
