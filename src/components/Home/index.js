@@ -7,9 +7,8 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import SearchBanner from "../../SearchBanner.js";
-import Carousel from 'react-material-ui-carousel'
 
-const RestaurantGroup = ({ restaurants }) => {
+/* const RestaurantGroup = ({ restaurants }) => {
   return restaurants.map((restaurant, i) => (
     <Restaurant
       key={i}
@@ -19,7 +18,7 @@ const RestaurantGroup = ({ restaurants }) => {
       address={restaurant.formatted_address}
     />
   ));
-};
+}; */
 
 
 function Home() {
