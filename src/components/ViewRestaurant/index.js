@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ViewRestaurant({ restaurant }) {
-  const images = restaurant.photos.map((image) => image.links[0]);
   const openingHours = restaurant.opening_hours.hours;
   const classes = useStyles();
   let history = useHistory();
@@ -63,7 +62,11 @@ function ViewRestaurant({ restaurant }) {
         className={classes.paper}
       >
         <div className={classes.imgDiv}>
-          <img className={classes.img} src={images} alt="Logo" />
+          <img
+            className={classes.img}
+            src={restaurant.photos[0].links[0]}
+            alt="Logo"
+          />
         </div>
         <h1 style={{ minHeight: "70px" }}>{name}</h1>
 

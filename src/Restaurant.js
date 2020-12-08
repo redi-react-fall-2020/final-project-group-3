@@ -1,8 +1,9 @@
-import "./App.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
+
+import "./App.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Restaurant(props) {
   const classes = useStyles();
+
   return (
     <Paper className={classes.paper}>
       <div className={classes.imgDiv}>
