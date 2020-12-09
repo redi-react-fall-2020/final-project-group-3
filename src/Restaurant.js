@@ -39,7 +39,7 @@ function Restaurant(props) {
       </div>
       <Link
         to={`singlerestaurant/${props.name}`}
-        style={{ color: "inherit", textDecoration: "inherit" }}
+        style={{ color: "inherit", textDecoration: "inherit", hover: "green" }}
       >
         <h1 style={{ minHeight: "70px" }}>{props.name}</h1>
       </Link>

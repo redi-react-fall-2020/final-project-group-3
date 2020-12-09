@@ -22,7 +22,7 @@ function Filters({ setFilter }) {
         <Typography className={classes.typography}>Delivery</Typography>
       </Box>
       <Box id="open-toggle" display="flex">
-        <Checkbox onChange={(e) => setFilter(e, "open_now")} />
+        <Checkbox onChange={(e) => setFilter(e, "open")} />
         <Typography className={classes.typography}>Open</Typography>
       </Box>
     </Box>

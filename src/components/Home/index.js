@@ -62,13 +62,11 @@ function Home() {
           if (filters.delivery) return rest.delivery;
           else return true;
         })
-      // todo
-      /*   .filter((rest) => {
-          if (filters.opening_hours) {
-            const time = new Date().getTime();
-            return rest.open_now < time;
-          } else return true;
-        }) */
+        // checks open restaurants
+        .filter((rest) => {
+          if (filters.open) return rest.opening_hours.open_now;
+          else return true;
+        })
     );
   }, [filters, allRestaurants]);
 
