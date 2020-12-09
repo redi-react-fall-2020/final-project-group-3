@@ -62,7 +62,7 @@ function Home() {
           if (filters.delivery) return rest.delivery;
           else return true;
         })
-        // todo
+      // todo
       /*   .filter((rest) => {
           if (filters.opening_hours) {
             const time = new Date().getTime();
@@ -82,7 +82,7 @@ function Home() {
 
             {filteredRestaurants.map((restaurant) => {
               return (
-                <Grid item xl={3} lg={3} xs={3} sm={3} key={restaurant.id}>
+                <Grid item xl={3} lg={3} xs={6} sm={3} key={restaurant.id}>
                   <Restaurant
                     picture={restaurant.photos[0].links[0]}
                     name={restaurant.name}

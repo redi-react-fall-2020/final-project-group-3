@@ -37,7 +37,10 @@ function Restaurant(props) {
       <div className={classes.imgDiv}>
         <img className={classes.img} src={props.picture} alt="Logo" />
       </div>
-      <Link to={`singlerestaurant/${props.name}`}  style={{ color: 'inherit', textDecoration: 'inherit' }}>
+      <Link
+        to={`singlerestaurant/${props.name}`}
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
         <h1 style={{ minHeight: "70px" }}>{props.name}</h1>
       </Link>
       <p>{props.type}</p>
