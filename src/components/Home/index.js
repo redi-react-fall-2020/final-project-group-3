@@ -71,7 +71,7 @@ function Home() {
              
                 {
                   filterRestaurant.map((restaurant, i) => {
-                    return <Grid item xl={3} lg={3} xs={3} sm={3}> 
+                    return <Grid item xl={3} lg={4} xs={6} sm={6}> 
                     <Restaurant
                       key={i}
                       picture={restaurant.photos[0].links[0]}

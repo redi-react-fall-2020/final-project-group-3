@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 
 function SearchBanner(props) {
     const classes = useStyles();
-    return <Grid item lg={12} xs={3} sm={6}>
+    return <Grid item xl= {12} lg={12} xs={6} sm={6}>
 
         <Paper className={classes.paper}>
         <Search handleChange={props.handleChange} />
