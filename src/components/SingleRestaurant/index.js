@@ -17,7 +17,7 @@ function SingleRestaurant() {
 
   const rest =
     restaurants &&
-    restaurants.map((restaurant) => restaurant).find((p) => p.name === id);
+    restaurants.map((restaurant) => restaurant).find((res) => res.name === id);
 
   return <div>{rest ? <ViewRestaurant restaurant={rest} /> : "not found"}</div>;
 }
